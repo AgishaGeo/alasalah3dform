@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en"dir="ltr">
+<head>
+    <meta charset="utf-8">
+<title>
+    Client Feedback Form
+</title>
+<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <form action="insert.php" method="post">
+        <h1>Feedback Form</h1>
+        <h5>Kindly submit your details and feedback</h5>
+
+        <br>
+
+        <div>
+        <label for="cname">Client Name:</label>
+        <input type="text" id="cname" name="cname" placeholder="Type here" required>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="cid">Client Instagram Id:</label>
+        <input type="text" id="cid" name="cid" placeholder="Type here" required>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="phone">Client Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required>
+        </div>
+
+        <br>
+
+        <div><label for="star">Rating:</label></div>
+
+        <br>
+
+    <div class="rating-css">
+        <div class="star-icon">
+            <input type="radio" name="star" id="star1" value="1" ><label for="star1" class="fa fa-star">
+            </label>
+            <input type="radio" name="star" id="star2" value="2" ><label for="star2" class="fa fa-star">
+            </label>
+            <input type="radio" name="star" id="star3" value="3" ><label for="star3" class="fa fa-star">
+            </label>
+            <input type="radio" name="star" id="star4" value="4" ><label for="star4" class="fa fa-star">
+            </label>
+            <input type="radio" name="star" id="star5" value="5" ><label for="star5" class="fa fa-star">
+            </label>
+        </div>
+    </div>
+
+        <br>
+
+        <div>
+        <label for="feedback">Client Feedback(Optional):</label>
+        <input type="text" id="feedback" name="feedback" placeholder="Type here">
+        </div>
+
+        <br>
+
+        <div>
+            <button><input type="submit"></button>
+            <button><input type="reset"></button>
+        </div>
+
+    </form>
+
+</body>
+
+
+
+</html>
